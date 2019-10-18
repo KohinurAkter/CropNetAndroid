@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b8b9bc"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:text="Temperature"
+                android:textAlignment="center"
+                android:textColor="#ac2bae"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tempr"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#ac2bae"
+                android:textSize="60dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:text="Humidity"
+                android:textAlignment="center"
+                android:textColor="#3e9f58"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/Humidi"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#3e9f58"
+                android:textSize="60dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:text="Moisture"
+                android:textAlignment="center"
+                android:textColor="#dcc91f"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/mos"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#dcc91f"
+                android:textSize="60dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="#f9f4f4"
+                    android:gravity="center_vertical"
+                    android:text="Click to Turn"
+                    android:textAlignment="center"
+                    android:textColor="#f5705f"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/controlmotor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#f9f4f4"
+                    android:gravity="center_vertical"
+                    android:text="on"
+                    android:textAlignment="center"
+                    android:textColor="#19dfc8"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="#f9f4f4"
+                    android:gravity="center_vertical"
+                    android:text="motor"
+                    android:textAlignment="center"
+                    android:textColor="#f5705f"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/oc"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:background="#f9f4f4"
+                android:gravity="center_vertical"
+                android:onClick="motorcontroller"
+                android:text="Motor OFF"
+                android:textAlignment="center"
+                android:textColor="#f5705f"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f5705f"
+            android:gravity="center_vertical"
+            android:onClick="as"
+            android:text="Agronomist Suggestion"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
